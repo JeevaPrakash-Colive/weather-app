@@ -12,11 +12,11 @@
 </div> -->
 <mat-card class="top-header">
   <div class="container">
-      <h3 class="text-center my-4">Search for Weather</h3>
-      <div class="text-center">
-        <input class="center" [(ngModel)]="this.city" placeholder="Enter city">
-        <button mat-raised-button color="primary" (click)="getWeather()">Get Weather</button>
-      </div>
+    <h3 class="text-center my-4">Search for Weather</h3>
+    <div class="text-center">
+      <input class="center" [(ngModel)]="this.city" placeholder="Enter city">
+      <button mat-raised-button color="primary" (click)="getWeather()">Get Weather</button>
+    </div>
     <mat-card *ngIf="isVisible" class="mid-header">
       <mat-card style="padding: 10px;">
         <div class="row">
