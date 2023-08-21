@@ -1,0 +1,29 @@
+header {
+    background-color: #3498db;
+    padding: 30px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    color: #f1c40f;
+  }
+
+  .col-md-3{
+    padding: 16px !important;
+  }
+  .content{
+    font: bold; 
+    color: rgb(255, 131, 131)
+  }
+
+  .top-header{
+    height: 550px !important;
+  }
+
+  .mid-header{
+    margin-top: 10px !important;
+  }
+
+  input{
+    margin-right:20px !important
+  }

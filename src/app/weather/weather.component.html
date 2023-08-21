@@ -1,0 +1,101 @@
+<!-- <div>
+  <h2>Weather App</h2>
+  <input [(ngModel)]="this.city" placeholder="Enter city">
+  <button (click)="getWeather()">Get Weather</button>
+
+  <div *ngIf="weatherData">
+    <h3>Weather in {{ weatherData.name }}</h3>
+    <p>{{ weatherData.weather[0].description }}</p>
+    <p>Temperature: {{ weatherData.main.temp }}°C</p>
+    <p>Humidity: {{ weatherData.main.humidity }}%</p>
+  </div>
+</div> -->
+<mat-card class="top-header">
+  <div class="container">
+      <h3 class="text-center my-4">Search for Weather</h3>
+      <div class="text-center">
+        <input class="center" [(ngModel)]="this.city" placeholder="Enter city">
+        <button mat-raised-button color="primary" (click)="getWeather()">Get Weather</button>
+      </div>
+    <mat-card *ngIf="isVisible" class="mid-header">
+      <mat-card style="padding: 10px;">
+        <div class="row">
+          <h3 class="text-center my-4">Getting Weather Details for the City <span
+              style="font: bold; color: rgb(255, 131, 131);">{{ weatherData.name }}</span></h3>
+
+          <p>City Details</p>
+          <div class="col-md-3">
+            <mat-card>
+              <mat-card-content>
+                <p>Weather in <span class="content">{{ weatherData.name }}</span></p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-md-3">
+            <mat-card>
+              <mat-card-content>
+                <p>{{ weatherData.weather[0].description }}</p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-md-3">
+            <mat-card>
+              <mat-card-content>
+                <p>Latitude: <span class="content">{{ weatherData.coord.lat }}</span></p>
+
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-md-3">
+            <mat-card>
+              <mat-card-content>
+                <p>Longitude: <span class="content">{{ weatherData.coord.lon }}</span></p>
+
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+
+      </mat-card>
+
+      <mat-card style="padding: 10px;">
+        <p>Weather Details</p>
+        <div class="row">
+          <div class="col-md-3">
+            <mat-card>
+              <mat-card-content>
+                <p>Maximum Temperature <span class="content">{{ weatherData.main.temp_max
+                    }}</span></p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-md-3">
+            <mat-card>
+              <mat-card-content>
+                <p>Minimum Temperature {{ weatherData.main.temp_min }}</p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-md-3">
+            <mat-card>
+              <mat-card-content>
+                <p>Temperature: <span class="content">{{ weatherData.main.temp
+                    }}°C</span>
+                </p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-md-3">
+            <mat-card>
+              <mat-card-content>
+                <p>Humidity: <span class="content">{{ weatherData.main.humidity
+                    }}%</span>
+                </p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </mat-card>
+    </mat-card>
+  </div>
+</mat-card>
