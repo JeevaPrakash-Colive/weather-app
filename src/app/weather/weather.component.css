@@ -1,29 +1,203 @@
+body{
+	background-image: url("../../assets//Images/weather.jpg");
+	background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height:100vh;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+input[type=text]{
+  width:50%;
+  border:2px solid #aaa;
+  border-radius:4px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+}
+
+input[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+
 header {
-    background-color: #3498db;
-    padding: 30px;
-    width: 100%;
+  background-color: #3498db;
+  padding: 30px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  color: #f1c40f;
+}
+
+.col-md-3 {
+  padding: 16px !important;
+}
+
+.content {
+  font: bold;
+  color: rgb(255 45 45);
+  font-family: cursive;
+}
+
+.top-header {
+  height: 550px !important;
+}
+
+.mid-header {
+  margin-top: 10px !important;
+}
+
+input {
+  margin-right: 20px !important
+}
+
+.mat-mdc-card{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;}
+
+.mat-mdc-card-content{
+  height: 100px;
+}
+
+.container {
+  margin-top: -660px !important;
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  background-color: black;
+}
+.nav-header {
+  /* display:flex;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    background-color: aquamarine; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 700;
+  font-size: 13px;
+  color: white;
+  /* background-color: aquamarine; */
+  width: 80rem;
+}
+.login-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 11rem;
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  /* background-color: blueviolet; */
+}
+
+.login-icon span {
+    position: relative;
+    text-decoration: none;
     color: white;
-    text-align: center;
-    font-size: 30px;
-    color: #f1c40f;
   }
 
-  .col-md-3{
-    padding: 16px !important;
+  .login-icon span::after {
+      content: '';
+      background-color: blueviolet;
+      height: 0.17rem;
+      width: 0%;
+      left: 0;
+      bottom: -0.8rem;
+      position: absolute;
+      transition: 0.5s;
   }
-  .content{
-    font: bold; 
-    color: rgb(255, 131, 131)
-  }
-
-  .top-header{
-    height: 550px !important;
-  }
-
-  .mid-header{
-    margin-top: 10px !important;
+  .login-icon span:hover::after{
+      width: 100%;
   }
 
-  input{
-    margin-right:20px !important
-  }
+
+.search-section {
+  display: flex;
+  flex-direction: row;
+  width: 18rem;
+  margin-left: 1.5rem;
+  /* background-color: aliceblue; */
+}
+.search-section button {
+  background-color: rgb(32, 34, 36);
+  border: 0px;
+}
+.search-section input {
+  background-color: rgb(32, 34, 36);
+  width: 13rem;
+  height: 2.5rem;
+  border: 0px;
+  color: white;
+}
+
+/* ---- ICONS Section-------- */
+.logo {
+  height: 35px;
+}
+.login-user-icon {
+  background-color: bisque;
+  width: 1.9rem;
+  border-radius: 2rem;
+}
+.more-icon img {
+  height: 0.5rem;
+  background-color: white;
+  border-radius: 2rem;
+  margin-left: 2rem;
+}
+.search-section img {
+  height: 1.7rem;
+}
+
+/* -----Navbar Scetion------- */
+.nav-list {
+  width: 40rem;
+  margin-left: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background-color: beige; */
+}
+.nav-list li {
+  list-style: none;
+  padding-left: 2rem;
+}
+.nav-list a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+/* .nav-list a:hover {
+  color: brown;
+} */
+.nav-list a::after {
+    content: '';
+    background-color: rgb(210, 154, 154);
+    height: 0.2rem;
+    width: 0%;
+    left: 0;
+    bottom: -1.2rem;
+    position: absolute;
+    transition: 0.5s;
+}
+.nav-list a:hover::after{
+    width: 100%;
+}
+
+.con-header{
+  font-weight: bold;
+  font-family: cursive; 
+  color: rgb(255 45 45);
+}
+
